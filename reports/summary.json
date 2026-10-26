@@ -1,0 +1,138 @@
+{
+  "precincts": 10438,
+  "counties": 67,
+  "total_votes": {
+    "Biden": 3460310,
+    "Trump": 3378095
+  },
+  "precincts_with_mode_breakdown": 5608,
+  "counties_with_mode_breakdown": 31,
+  "digit_tests": {
+    "Biden": {
+      "first": {
+        "test": "first",
+        "n": 10194,
+        "chi2": 731.253,
+        "p_value": 1.333364938313697e-152,
+        "mean_digit": 3.376,
+        "expected_mean": 3.4402,
+        "mad": 0.028
+      },
+      "second": {
+        "test": "second",
+        "n": 9741,
+        "chi2": 45.73,
+        "p_value": 6.759370359184724e-07,
+        "mean_digit": 4.3637,
+        "expected_mean": 4.1874,
+        "mad": 0.00543
+      },
+      "last": {
+        "test": "last",
+        "n": 9741,
+        "chi2": 14.891,
+        "p_value": 0.09398614553493818,
+        "mean_digit": 4.4589,
+        "expected_mean": 4.5,
+        "mad": 0.00284
+      }
+    },
+    "Trump": {
+      "first": {
+        "test": "first",
+        "n": 9983,
+        "chi2": 206.927,
+        "p_value": 2.2141464454617656e-40,
+        "mean_digit": 3.6762,
+        "expected_mean": 3.4402,
+        "mad": 0.01408
+      },
+      "second": {
+        "test": "second",
+        "n": 9257,
+        "chi2": 17.602,
+        "p_value": 0.04008170085098846,
+        "mean_digit": 4.1437,
+        "expected_mean": 4.1874,
+        "mad": 0.00353
+      },
+      "last": {
+        "test": "last",
+        "n": 9257,
+        "chi2": 32.259,
+        "p_value": 0.00017961051067225494,
+        "mean_digit": 4.3808,
+        "expected_mean": 4.5,
+        "mad": 0.00494
+      }
+    }
+  },
+  "size_preserving_null": {
+    "Biden": {
+      "second": {
+        "test": "second",
+        "observed_chi2": 45.73,
+        "benford_p_value": 6.759370359184724e-07,
+        "null_chi2_median": 27.979,
+        "monte_carlo_p_value": 0.0439,
+        "share_of_null_sims_rejected_at_1pct": 0.758
+      },
+      "last": {
+        "test": "last",
+        "observed_chi2": 14.891,
+        "benford_p_value": 0.09398614553493818,
+        "null_chi2_median": 9.15,
+        "monte_carlo_p_value": 0.1317,
+        "share_of_null_sims_rejected_at_1pct": 0.014
+      }
+    },
+    "Trump": {
+      "second": {
+        "test": "second",
+        "observed_chi2": 17.602,
+        "benford_p_value": 0.04008170085098846,
+        "null_chi2_median": 8.361,
+        "monte_carlo_p_value": 0.0519,
+        "share_of_null_sims_rejected_at_1pct": 0.002
+      },
+      "last": {
+        "test": "last",
+        "observed_chi2": 32.259,
+        "benford_p_value": 0.00017961051067225494,
+        "null_chi2_median": 12.614,
+        "monte_carlo_p_value": 0.012,
+        "share_of_null_sims_rejected_at_1pct": 0.082
+      }
+    }
+  },
+  "last_digit_p_by_min_count": {
+    "Biden": {
+      "10": 0.094,
+      "50": 0.3324,
+      "100": 0.3536,
+      "200": 0.3812
+    },
+    "Trump": {
+      "10": 0.0002,
+      "50": 0.0476,
+      "100": 0.0561,
+      "200": 0.1999
+    }
+  },
+  "outliers": {
+    "z_threshold": 4.0,
+    "min_two_party_votes": 100,
+    "eligible_precincts": 9391,
+    "flagged": 135,
+    "flagged_share": 0.0129,
+    "flagged_on_share": 100,
+    "flagged_on_mode_gap": 41,
+    "flagged_by_county_top5": {
+      "Philadelphia": 72,
+      "Westmoreland": 11,
+      "Chester": 8,
+      "York": 6,
+      "Bedford": 5
+    }
+  }
+}

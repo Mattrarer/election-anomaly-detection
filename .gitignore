@@ -1,0 +1,25 @@
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Data and model artefacts (download them instead of committing)
+data/
+*.parquet
+*.zip
+*.h5
+*.keras
+*.pt
+*.joblib
+
+# Credentials
+kaggle.json
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+*.egg-info/
